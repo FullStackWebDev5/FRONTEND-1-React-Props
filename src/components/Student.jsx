@@ -1,14 +1,19 @@
 import React from 'react'
 
-function Student(props) {
+const Student = ({ 
+  name = 'John Doe', 
+  batch = 'January', 
+  course = 'DSA', 
+  marks = 100 
+}) => {
   return (
     <div>
-      <h3>{props.name}</h3>
+      <h3>{ name }</h3>
 
       <ul>
-        <li>Batch: {props.batch}</li>
-        <li>Course: {props.course}</li>
-        <li>Marks: {props.marks}</li>
+        <li>Batch: { batch }</li>
+        <li>Course: { course }</li>
+        <li>Marks: { marks }</li>
       </ul>
     </div>
   )

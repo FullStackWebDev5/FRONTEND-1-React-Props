@@ -1,14 +1,17 @@
 import './App.css'
-// import Student from './components/Student'
-import Movies from './components/Movies'
+import Student from './components/Student'
+// import Movies from './components/Movies'
+// import Counter from './components/Counter'
+// import Student from './components/StudentCC'
 
 function App() {
   return (
     <div>
+      {/* <Counter /> */}
 
-      <Movies />
+      {/* <Movies /> */}
 
-      {/* <h1>Students</h1>
+      <h1>Students</h1>
       <Student 
         name='Omkar'
         batch="April" 
@@ -32,7 +35,8 @@ function App() {
         batch="March" 
         course='Android Dev'
         marks={99}
-      /> */}
+      />
+      <Student />
     </div>
   )
 }
@@ -45,8 +49,10 @@ export default App
 /*
   # Props (Properties)
     - Data received by the component from it's parent (Data passed down to child components)
+      - Data flow in React happens only in one direction (parent to child components)
     - Props are immutable (cannot be changed by the child component)
-      - Props are 'read-only' data for child components
+      - Props are 'read-only' data for child components, hence cannot be updated
+      - One way of updating prop within the child component is to pass the setState method as a prop to the child component, which can then be used to update the parent state
     - Whenever any prop of the component changes, the component automatically re-renders
     - Syntax:
       - Parent component (Pass)
