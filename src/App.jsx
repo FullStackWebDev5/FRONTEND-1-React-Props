@@ -1,8 +1,10 @@
 import './App.css'
-import Student from './components/Student'
+// import Student from './components/Student'
 // import Movies from './components/Movies'
 // import Counter from './components/Counter'
 // import Student from './components/StudentCC'
+import Component1 from './components/Component1'
+import Component2 from './components/Component2'
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
 
       {/* <Movies /> */}
 
-      <h1>Students</h1>
+      {/* <h1>Students</h1>
       <Student 
         name='Omkar'
         batch="April" 
@@ -36,7 +38,10 @@ function App() {
         course='Android Dev'
         marks={99}
       />
-      <Student />
+      <Student /> */}
+
+      <Component1 />
+      <Component2 />
     </div>
   )
 }
